@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>R.M.Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Raleway&display=swap" rel="stylesheet"> 
+
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+		
+	<span class="checkbtn" onclick="openNav()">&#9776;</span>
+	
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#home"onclick="closeNav()">Home</a>
+	  <a href="#portfolio"onclick="closeNav()">Portfolio</a>
+	  <a href="#about"onclick="closeNav()">About</a>
+	  <a href="#partners"onclick="closeNav()">Partners</a>
+	  <a href="#contact"onclick="closeNav()">Contact</a>
+	</div>
+
+
+	<!-----------------------MODAL--------------------------->
+
+	<div class="modal fade"id="myModal">
+				<div class="modal-dialog modal-md modal-dialog-centered">
+					<div class="modal-content text-light bg-dark">
+
+						<div class="modal-header mx-auto border-0">
+								<img src="images/under.png" class="img-fluid" width="250" height="250">						
+						</div>
+
+						<div class="modal-body mx-auto">
+							<h5 class="font-weight-bold">Check Us Later :)</h5>
+						</div>	
+						<div class="modal-footer border-0">
+							<button class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+	</div>
+
+
+
+	<div class="row">
+
+				<!-----------------------ME--------------------------->
+
+
+		<div class="col-lg-4 m-0 p-0" id="me"></div>
+
+
+				<!----------------------Second Block--------------------->
+
+
+		<div class="col-lg-8 m-0 p-0">	
+
+			<!-----------------Header-------------------------------->
+			<div class="jumbotron rounded-0" id="home">
+				<div class="container mt-5 mb-5 p-5">
+					<h1 class="d-flex justify-content-center display-4">R. M.</h1>
+					<p class="d-flex justify-content-center">junior Dev</p>
+					<div class="d-flex justify-content-center">
+						<button class="btn btn-dark rounded-0" type="btn"  data-toggle="modal" data-target="#myModal">
+							<span><i class="fas fa-download"></i></span>
+							Check below
+						</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container-fluid justify-content-center" id="portfolio">	
+				<h2><span>My Portfolio</span></h2>
+				<hr>
+			</div>
+
+			<!----------------------PORTFOLIO----------------------->
+
+			<div class="container-fluid" id="pt">
+				<div class="row">
+					<div class="col-lg-4">						
+						<div class="card img-fluid mb-2 border-0">
+							<img src="images/p1.jpg"class="card-img-top rounded-0"style="width:100%">
+							<div class="card-img-overlay bg-light">
+								<h4 class="card-title">HTML5 & CSS3</h4>
+								<p class="card-text">RENT A CAR</p>
+								<a href="https://plmotors.000webhostapp.com/" target="_blank" class="btn btn-secondary btn-md rounded-0">Click to Visit</a>
+							</div>
+						</div>	
+						<div class="card img-fluid mt-4 border-0">
+							<img src="images/p2.jpg"class="card-img-top rounded-0"style="width:100%">
+							<div class="card-img-overlay bg-light">
+								<h4 class="card-title">HTML5 & CSS3</h4>
+								<p class="card-text">TRAVEL AGENCY</p>
+								<a href="https://travellike.epizy.com/" data-toggle="modal" data-target="#myModal" class="btn btn-secondary btn-md rounded-0">Click to Visit</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8 p-4">
+						<div class="card img-fluid border-0">
+							<img src="images/p8.jpg"class="card-img-top rounded-0"style="width:100%">
+							<div class="card-img-overlay bg-light">
+								<h4 class="card-title">Wordpress</h4>
+								<p class="card-text">GTAV FanPage</p>
+								<a href="https://gtafunclub.site/" target="_blank" class="btn btn-secondary btn-lg rounded-0">Click to Visit</a>
+							</div>
+						</div>						
+					</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 p-4">
+					<div class="card img-fluid border-0">
+							<img src="images/p4.jpg"class="card-img-top rounded-0"style="width:100%">
+							<div class="card-img-overlay bg-light">
+								<h4 class="card-title">HTML5 & CSS3</h4>
+								<p class="card-text">STARWARS FanPage</p>
+								<a href="https://swmandalorian.000webhostapp.com/" target="_blank" class="btn btn-secondary btn-lg rounded-0">Click to Visit</a>
+							</div>
+						</div>	
+				</div>
+				<div class="col-lg-6 p-2">
+					<div class="card img-fluid border-0">
+							<img src="images/p3.jpg"class="card-img-top rounded-0"style="width:100%">
+							<div class="card-img-overlay bg-light">
+								<h4 class="card-title">Bootrstrap 4</h4>
+								<p class="card-text">YAMAHA FanPage</p>
+								<a href="https://yamahamc.000webhostapp.com/" target="_blank" class="btn btn-secondary btn-lg rounded-0">Click to Visit</a>
+							</div>
+						</div>	
+				</div>
+			</div>
+		</div>
+
+		<!------------------------------ABOUT------------------------->
+
+		<div class="container mt-5" id="about">	
+				<h2><span>About Me</span></h2>
+				<hr>
+				<p>
+					Hi there!!!<br/>
+					I am very exited about web development.<br/>
+					I am learning new technologies and searching for new opportunities to widen my skills.
+					<br/>
+					If you are interested in my profile - let me know :)<br/>
+					Lets do something cool!<br/>
+					See you!
+				</p>				
+				
+		</div>
+
+
+		<!--------------------------------SKILLS----------------------->
+
+		<div class="container mt-5">
+			<h2><span>My Skills</span></h2>
+			<hr>
+			<div class="container mt-4 p-0">
+			<h3>HTML5</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"style="width:80%">80%</div>
+			</div>
+			</div>
+
+			<div class="container mt-4 p-0">
+			<h3>CSS3</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated  bg-secondary"style="width:70%">70%</div>
+			</div></div>
+
+			<div class="container mt-4 p-0">
+			<h3>SASS</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated  bg-secondary"style="width:65%">65%</div>
+			</div></div>
+
+			<div class="container mt-4 p-0">
+			<h3>Bootstrap 3/4</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated  bg-secondary"style="width:85%">85%</div>
+			</div></div>
+
+
+			<div class="container mt-4 p-0">
+			<h3>JavaScript</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated  bg-secondary"style="width:70%">70%</div>
+			</div></div>
+			<div class="container mt-4 p-0">
+
+			<h3>Wordpress</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated  bg-secondary"style="width:50%">50%</div>
+			</div></div>
+		</div>
+
+
+		<!--------------------PARTNERS---------------------------------->
+
+		<div class="container text-white mt-5" id="partners">
+			<div class="row p-3">
+				<div class="col-sm text-center">
+					<h4>1+</h4>
+					<h4>Partners</h4>					
+				</div>
+				<div class="col-sm text-center">
+					<h4>6+</h4>
+					<h4>Projects Done</h4>					
+				</div>
+				<div class="col-sm text-center">
+					<h4>1+</h4>
+					<h4>Happy Clients</h4>					
+				</div>
+				<div class="col-sm text-center">
+					<h4>1+</h4>
+					<h4>Meetings</h4>					
+				</div>
+			</div>
+		</div>
+
+		<!--<div class="container mt-5">
+			<div class="d-flex justify-content-left">
+					<button class="btn btn-light rounded-0" type="btn">
+						<span><i class="fas fa-download"></i></span>
+							Download Resume
+					</button>
+			</div>
+		</div>-->
+
+
+		<!----------------------PARTNERS-------------------->
+
+		<div class="container mt-5">
+			<h2><span>My Partners</span></h2>
+			<hr>
+			<div class="media p-3">
+				<img src="images/ava1.jpg" class="mr-4 rounded-circle" width="70px">
+				<div class="media-body">
+					<h4 class="text-muted">Kylo Ren<span class="m-4"><small>CEO at First Order</small></span></h4>
+					<p><kbd># % & * + \ < > = @ [ ] _ !</kbd></p>
+				</div>
+			</div>
+
+
+			<div class="media p-3">
+				<img src="images/ava2.jpg" class="mr-4 rounded-circle" width="70px">
+				<div class="media-body">
+					<h4 class="text-muted">Darth Maul<span class="m-4"><small>CEO at Sith Order</small></span></h4>
+					<p><kbd >\ + * / % = @ : ' " " { - ) q > !</kbd></p>
+				</div>
+			</div>
+
+
+			<div class="media p-3">
+				<img src="images/ava3.jpg" class="mr-4 rounded-circle" width="70px">
+				<div class="media-body">
+					<h4 class="text-muted">Darth Vader<span class="m-4"><small>Dark lord of the Sith</small></span></h4>
+					<p><kbd>? 0 $ { } * : _ ^ @ = ! + # & ^</kbd></p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!----------------------------WORK EXP-------------------------->
+
+
+		<div class="container-fluid mt-5" id="exp">
+			<h2><span>Work Experience</span></h2>
+			<hr>
+			<div class="row p-2">
+
+				<div class="col-md-4">
+					<div class="card text-center p-4 rounded-0 shadow">
+						<div class="card-hedear bg-dark">
+							<h2 class="card-title text-light mx-auto my-auto">Folio</h2>							
+						</div>						
+						<div class="card-body bg-secondary text-left text-light">
+							<h4 class="card-text"><span><i class="fas fa-briefcase"></i></span> Company</h4>
+							<p class="card-text"><kbd >\ + * / % = @ !</kbd></p>
+							<hr>
+							<h4 class="card-text"><span><i class="fas fa-user-alt"></i></span> Role</h4>
+							<p class="card-text"><kbd >\ + * / % = @ !</kbd></p>
+							<hr>
+							<h4 class="card-text"><span><i class="fas fa-map-marker-alt"></i></span> Location</h4>
+							<p class="card-text"><kbd >\ + * / % = @ !</kbd></p>
+							<hr>
+							<h4 class="card-text"><span><i class="far fa-clock"></i></span> Duration</h4>
+							<p class="card-text"><kbd >\ + * / % = @  !</kbd></p>
+							<hr>							
+						</div>								
+						<div class="card-footer bg-none">
+							<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Learn More</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4">
+					<div class="card text-center p-4 rounded-0 shadow">
+						<div class="card-hedear">
+							<h2 class="card-title text-dark">Folio</h2>
+							<hr>
+						</div>						
+						<div class="card-body bg-secondary text-left text-light">
+							<h4 class="card-text"><span><i class="fas fa-briefcase"></i></span> Company</h4>
+							<p class="card-text"><kbd >\ + * / % = @ !</kbd></p>
+							<hr>
+							<h4 class="card-text"><span><i class="fas fa-user-alt"></i></span> Role</h4>
+							<p class="card-text"><kbd >\ + * / % = @ !</kbd></p>
+							<hr>
+							<h4 class="card-text"><span><i class="fas fa-map-marker-alt"></i></span> Location</h4>
+							<p class="card-text"><kbd >\ + * / % = @ !</kbd></p>
+							<hr>
+							<h4 class="card-text"><span><i class="far fa-clock"></i></span> Duration</h4>
+							<p class="card-text"><kbd >\ + * / % = @ !</kbd></p>
+							<hr>							
+						</div>
+						<hr>
+						<div class="card-footer bg-none">
+							<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Learn More</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4">
+					<div class="card text-center rounded-0 shadow">
+						<div class="card-hedear bg-dark">
+							<h2 class="card-title text-light mx-auto my-auto">Folio</h2>							
+						</div>						
+						<div class="card-body bg-secondary text-left text-light">
+							<h4 class="card-text"><span><i class="fas fa-briefcase"></i></span> Company</h4>
+							<p class="card-text text-light">: ' " " { - ) q > !</p>
+							<hr>
+							<h4 class="card-text"><span><i class="fas fa-user-alt"></i></span> Role</h4>
+							<p class="card-text text-light"> : ' " " { - ) q > !</p>
+							<hr>
+							<h4 class="card-text"><span><i class="fas fa-map-marker-alt"></i></span> Location</h4>
+							<p class="card-text text-light">: ' " " { - ) q > !</p>
+							<hr>
+							<h4 class="card-text"><span><i class="far fa-clock"></i></span> Duration</h4>
+							<p class="card-text text-light">: ' " " { - ) q > !</p>										
+						</div>						
+						<div class="card-footer bg-none">
+							<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!---------------------------------CONTACT------------------------------>
+
+
+
+		<div class="container mt-5 mb-5" id="contact">
+			<h2><span>Contact Me</span></h2>
+			<hr>
+
+			<div class="container mt-4">
+				<h5><span><i class="fas fa-map-marker-alt"></i></span> Yerevan, Armenia</h5>
+			</div>
+			<div class="container mt-4">
+				<h5><span><i class="fas fa-phone"></i></span> +374*77*36*25*52</h5>
+			</div>
+			<div class="container mt-4">
+				<h5><span><i class="fas fa-at"></i></span>gmail</h5>
+			</div>
+		</div>
+
+		<div class="container  mb-5">
+			<img src="images/map.jpg" class="img-fluid" style="filter:grayscale(50%); width:100%" >
+		</div>
+
+
+		<div class="container">
+			
+			<form action="#">
+				<div class="fomr-group p-2">
+				<h5>Lets get in touch. Send me your a message:</h5>
+				</div>
+				<div class="fomr-group p-2">
+					<input type="text" class="form-control form-control-lg shadow-none" id="text" placeholder="Name" required>
+				</div>
+				<div class="fomr-group p-2">
+					<input type="email" class="form-control form-control-lg shadow-none" id="email" placeholder="Email" required>
+				</div>
+				<div class="fomr-group p-2">
+					<input type="text" class="form-control form-control-lg shadow-none" id="text" placeholder="Subject" required>
+				</div>
+				<div class="fomr-group p-2">
+					<input type="text" class="form-control form-control-lg shadow-none" id="massage" placeholder="Message" required>
+				</div>
+				<div class="fomr-group p-2">
+				<button type="submit" class="btn btn-dark"><i class="far fa-paper-plane"></i> Send Message</button>
+				</div>
+			</form>
+		</div>
+
+		
+		<div class="container-fluid p-0 mt-5">
+				<div class="d-flex justify-content-center align-items-center" id="footer" style="height: 200px;">					 
+					 <div class="p-2"><a href="https://www.facebook.com/ruslan4iii" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
+					 <!--<div class="p-2"><a href="#"><i class="fab fa-linkedin"></i></a></div>-->
+					 <div class="p-2"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></div>
+					 <!--<div class="p-2"><a href="#"><i class="fab fa-pinterest"></i></a></div>-->
+					 <div class="p-2"><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></div>						
+				</div>				
+		</div>
+		
+	</div>
+
+	</div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "68%";
+  document.getElementById("mySidenav").style.opacity = "1";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.opacity = "0";
+}
+</script>
+</body>
+</html>
